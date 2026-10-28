@@ -1,0 +1,83 @@
+Checking hypothesis 1: ext4 vs btrfs
+*****************************************
+Results for workload: seqread
+seqread ext4-default vs btrfs-default p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+seqread ext4-tuned vs btrfs-tuned p-value: 3.0179667984904466e-11
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: randread
+randread ext4-default vs btrfs-default p-value: 3.3383888204288e-11
+Reject the null hypothesis. There is a statistically significant difference.
+randread ext4-tuned vs btrfs-tuned p-value: 3.8201597819993253e-10
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: seqwrite
+seqwrite ext4-default vs btrfs-default p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+seqwrite ext4-tuned vs btrfs-tuned p-value: 3.016075319890922e-11
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: randwrite
+randwrite ext4-default vs btrfs-default p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+randwrite ext4-tuned vs btrfs-tuned p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+ 
+ -
+Checking hypothesis 2: default vs tuned
+*****************************************
+Results for workload: seqread
+seqread ext4-default vs ext4-tuned p-value: 0.9587286264079353
+Fail to reject the null hypothesis. There is no statistically significant difference.
+seqread btrfs-default vs btrfs-tuned p-value: 0.678896324474732
+Fail to reject the null hypothesis. There is no statistically significant difference.
+------------------------------------------
+Results for workload: randread
+randread ext4-default vs ext4-tuned p-value: 0.9941019213254952
+Fail to reject the null hypothesis. There is no statistically significant difference.
+randread btrfs-default vs btrfs-tuned p-value: 0.021506179932511887
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: seqwrite
+seqwrite ext4-default vs ext4-tuned p-value: 3.815899440800449e-10
+Reject the null hypothesis. There is a statistically significant difference.
+seqwrite btrfs-default vs btrfs-tuned p-value: 0.20094889697592833
+Fail to reject the null hypothesis. There is no statistically significant difference.
+------------------------------------------
+Results for workload: randwrite
+randwrite ext4-default vs ext4-tuned p-value: 1.5291673925716366e-05
+Reject the null hypothesis. There is a statistically significant difference.
+randwrite btrfs-default vs btrfs-tuned p-value: 0.501143667603293
+Fail to reject the null hypothesis. There is no statistically significant difference.
+------------------------------------------
+ 
+ -
+Checking the others
+*****************************************
+Results for workload: seqread
+seqread btrfs-default vs ext4-tuned p-value: 3.0179667984904466e-11
+Reject the null hypothesis. There is a statistically significant difference.
+seqread ext4-default vs btrfs-tuned p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: randread
+randread btrfs-default vs ext4-tuned p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+randread ext4-default vs btrfs-tuned p-value: 1.0701785878647307e-09
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: seqwrite
+seqwrite btrfs-default vs ext4-tuned p-value: 3.016075319890922e-11
+Reject the null hypothesis. There is a statistically significant difference.
+seqwrite ext4-default vs btrfs-tuned p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+Results for workload: randwrite
+randwrite btrfs-default vs ext4-tuned p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+randwrite ext4-default vs btrfs-tuned p-value: 3.019859359162157e-11
+Reject the null hypothesis. There is a statistically significant difference.
+------------------------------------------
+
